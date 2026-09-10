@@ -1,6 +1,6 @@
 {
   "name": "excel-tutor",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,9 @@
     "start": "tsx server/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "certs:install": "office-addin-dev-certs install"
+    "certs:install": "office-addin-dev-certs install",
+    "start:desktop": "office-addin-debugging start manifest.xml desktop --app excel --dev-server \"npm run dev\" --dev-server-port 5173 --no-debug",
+    "stop:desktop": "office-addin-debugging stop manifest.xml desktop"
   },
   "dependencies": {
     "@fluentui/react-components": "^9.72.4",
@@ -32,6 +34,7 @@
     "@vitejs/plugin-basic-ssl": "^2.1.0",
     "@vitejs/plugin-react": "^5.0.2",
     "concurrently": "^9.2.1",
+    "office-addin-debugging": "^7.0.0",
     "office-addin-dev-certs": "^2.0.10",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2",

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.0 (2026-09-10)
+
+- Version: v0.2.0
+- Summary: Added Microsoft Office automatic desktop sideloading commands and a Chinese usage guide, avoiding the incorrect Developer XML Tools import path.
+- Changed files: `package.json`, `package-lock.json`, `DESKTOP_SIDELOAD_GUIDE.md`, and `CHANGELOG.md`.
+- Rollback: Run `npm.cmd uninstall --save-dev office-addin-debugging`, remove `start:desktop` and `stop:desktop` from `package.json`, restore the version to v0.1.2, then run `npm.cmd install`.
 ## v0.1.2 (2026-09-10)
 
 - Version: v0.1.2
