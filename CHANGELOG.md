@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.1 (2026-09-10)
+
+- Version: v0.2.1
+- Summary: Restored required Office command icons with real localhost PNG assets after runtime logs showed desktop Excel rejected the sideloaded manifest without them.
+- Changed files: `manifest.xml`, `public/assets/icon-16.png`, `public/assets/icon-32.png`, `public/assets/icon-80.png`, `package.json`, `package-lock.json`, and `CHANGELOG.md`.
+- Rollback: Run `git revert <v0.2.1 commit-hash>` after commit, then rerun `npm.cmd run start:desktop`.
 ## v0.2.0 (2026-09-10)
 
 - Version: v0.2.0
