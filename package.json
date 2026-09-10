@@ -1,6 +1,6 @@
 {
   "name": "excel-tutor",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +13,8 @@
     "test:watch": "vitest",
     "certs:install": "office-addin-dev-certs install",
     "start:desktop": "office-addin-debugging start manifest.xml desktop --app excel --dev-server \"npm run dev\" --dev-server-port 5173 --no-debug",
-    "stop:desktop": "office-addin-debugging stop manifest.xml desktop"
+    "stop:desktop": "office-addin-debugging stop manifest.xml desktop",
+    "catalog:refresh": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/refresh-local-catalog.ps1"
   },
   "dependencies": {
     "@fluentui/react-components": "^9.72.4",

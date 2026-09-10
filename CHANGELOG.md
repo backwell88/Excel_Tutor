@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.0 (2026-09-10)
+
+- Version: v0.3.0
+- Summary: Added a secure local trusted catalog workflow so Excel Tutor can be added to ordinary desktop workbooks instead of only a temporary debugging workbook.
+- Changed files: `.gitignore`, `package.json`, `package-lock.json`, `scripts/refresh-local-catalog.ps1`, `scripts/create-local-catalog-share.ps1`, `scripts/trust-local-catalog.ps1`, `PERSISTENT_CATALOG_GUIDE.md`, and `CHANGELOG.md`.
+- Rollback: Remove the `ExcelTutorCatalog` trusted catalog entry in Excel Trust Center, remove the local SMB share, then run `git revert <v0.3.0 commit-hash>` after commit.
 ## v0.2.1 (2026-09-10)
 
 - Version: v0.2.1
