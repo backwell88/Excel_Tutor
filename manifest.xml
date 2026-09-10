@@ -10,7 +10,6 @@
   <DefaultLocale>zh-CN</DefaultLocale>
   <DisplayName DefaultValue="Excel Tutor" />
   <Description DefaultValue="Keyboard-first Excel tutoring inside Excel." />
-  <IconUrl DefaultValue="https://localhost:5173/assets/icon-32.png" />
   <SupportUrl DefaultValue="https://localhost:5173" />
   <AppDomains>
     <AppDomain>https://localhost:5173</AppDomain>
@@ -36,22 +35,12 @@
             <CustomTab id="ExcelTutor.Tab">
               <Group id="ExcelTutor.Group">
                 <Label resid="ExcelTutor.GroupLabel" />
-                <Icon>
-                  <bt:Image size="16" resid="Icon.16" />
-                  <bt:Image size="32" resid="Icon.32" />
-                  <bt:Image size="80" resid="Icon.80" />
-                </Icon>
                 <Control xsi:type="Button" id="ExcelTutor.OpenTutor">
                   <Label resid="ExcelTutor.OpenTutor.Label" />
                   <Supertip>
                     <Title resid="ExcelTutor.OpenTutor.Label" />
                     <Description resid="ExcelTutor.OpenTutor.Description" />
                   </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
-                  </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>ExcelTutorPane</TaskpaneId>
                     <SourceLocation resid="Taskpane.Url" />
@@ -63,11 +52,6 @@
                     <Title resid="ExcelTutor.Settings.Label" />
                     <Description resid="ExcelTutor.Settings.Description" />
                   </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.16" />
-                    <bt:Image size="32" resid="Icon.32" />
-                    <bt:Image size="80" resid="Icon.80" />
-                  </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>ExcelTutorSettingsPane</TaskpaneId>
                     <SourceLocation resid="Settings.Url" />
@@ -81,11 +65,6 @@
       </Host>
     </Hosts>
     <Resources>
-      <bt:Images>
-        <bt:Image id="Icon.16" DefaultValue="https://localhost:5173/assets/icon-16.png" />
-        <bt:Image id="Icon.32" DefaultValue="https://localhost:5173/assets/icon-32.png" />
-        <bt:Image id="Icon.80" DefaultValue="https://localhost:5173/assets/icon-80.png" />
-      </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://localhost:5173" />
         <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:5173" />

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.2 (2026-09-10)
+
+- Version: v0.1.2
+- Summary: Removed manifest icon references that pointed to non-existent localhost PNG assets and blocked reliable Excel installation.
+- Changed files: `manifest.xml`, `package.json`, `package-lock.json`, and `CHANGELOG.md`.
+- Rollback: Run `git revert <v0.1.2 commit-hash>` after commit, or restore `manifest.xml`, `package.json`, and `package-lock.json` from v0.1.1.
 ## v0.1.1 (2026-09-09)
 
 - Version: v0.1.1
