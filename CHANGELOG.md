@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.2 (2026-09-10)
+
+- Version: v0.3.2
+- Summary: Consolidated reader documentation into README, renamed the desktop deployment troubleshooting guide in Chinese, and added a minimal Chinese quick-use guide.
+- Changed files: `README.md`, `无脑使用步骤.md`, `部署阶段问题及相关说明.md`, `IMPLEMENTATION_GUIDE.md` (deleted), `DESKTOP_SIDELOAD_GUIDE.md` (deleted), `PERSISTENT_CATALOG_GUIDE.md` (deleted), `package.json`, `package-lock.json`, and `CHANGELOG.md`.
+- Rollback: Run `git revert <v0.3.2 commit-hash>` after commit to restore the prior document structure.
 ## v0.3.1 (2026-09-10)
 
 - Version: v0.3.1
