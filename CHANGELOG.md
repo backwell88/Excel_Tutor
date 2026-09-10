@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.1 (2026-09-10)
+
+- Version: v0.3.1
+- Summary: Added a reader-friendly retrospective explaining today’s desktop Excel add-in installation, manifest, cache, and persistent catalog troubleshooting.
+- Changed files: `DESKTOP_EXCEL_TROUBLESHOOTING.md`, `package.json`, `package-lock.json`, and `CHANGELOG.md`.
+- Rollback: Run `git revert <v0.3.1 commit-hash>` after commit, or remove `DESKTOP_EXCEL_TROUBLESHOOTING.md` and restore the previous version fields.
 ## v0.3.0 (2026-09-10)
 
 - Version: v0.3.0
